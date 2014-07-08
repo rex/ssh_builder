@@ -1,14 +1,14 @@
-# ssh-builder
+# ssh_builder
 
 Ruby gem for dynamically building and maintaining your SSH config file.
 
 ## Status
 
-[ ![Codeship Status for rex/ssh-builder](https://codeship.io/projects/f44f0ac0-e8e2-0131-0b68-62677aa8682e/status)](https://codeship.io/projects/26113)
-[![Coverage Status](https://img.shields.io/coveralls/rex/ssh-builder.svg)](https://coveralls.io/r/rex/ssh-builder)
+[ ![Codeship Status for rex/ssh_builder](https://codeship.io/projects/f44f0ac0-e8e2-0131-0b68-62677aa8682e/status)](https://codeship.io/projects/26113)
+[![Coverage Status](https://img.shields.io/coveralls/rex/ssh_builder.svg)](https://coveralls.io/r/rex/ssh_builder)
 
 
-## Contributing to ssh-builder
+## Contributing to ssh_builder
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
