@@ -1,7 +1,7 @@
 require 'helper'
 
-class TestSshBuilder < Test::Unit::TestCase
+class TestSshBuilder < MiniTest::Test
   should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+    skip "hey buddy, you should probably rename this file and start testing for real"
   end
 end

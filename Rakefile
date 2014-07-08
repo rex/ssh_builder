@@ -17,10 +17,13 @@ Jeweler::Tasks.new do |gem|
   gem.name = "ssh_builder"
   gem.homepage = "http://github.com/rex/ssh_builder"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Ruby gem for dynamically building and maintaining your SSH config file.}
+  gem.description = %Q{Ruby gem for dynamically building and maintaining your SSH config file.}
   gem.email = "me@prex.io"
   gem.authors = ["Pierce Moore"]
+  gem.executables = ['ssh_builder']
+  gem.require_paths = ["lib"]
+  gem.files = Dir.glob("lib/**/*.rb")
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new

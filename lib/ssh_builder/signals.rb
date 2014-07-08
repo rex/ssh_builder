@@ -1,0 +1,1 @@
+Signal.trap("INT") { exit 1 }
