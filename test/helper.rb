@@ -35,6 +35,6 @@ Coveralls.wear!
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'ssh_builder/autoload'
+require 'ssh_builder/utils/autoload'
 
 MiniTest.autorun
