@@ -33,10 +33,14 @@ module SshBuilder
         $Log.info " > Credentials config exists? #{SshBuilder::Config::Credentials.exists?}"
         $Log.info " > Ssh config exists? #{SshBuilder::Config::Ssh.exists?}"
 
+        SshBuilder::Config::Personal.ensure
+        SshBuilder::Config::Credentials.ensure
+        SshBuilder::Config::Ssh.ensure
+
         Step.start("Testing Step")
         Step.complete
 
-        puts SshBuilder::Config::Credentials.generate({
+        puts SshBuilder::Config::Credentials.render({
           servers: [
             { name: 'Server 1', ip: '123.123.123.123' },
             { name: 'Server 2', ip: '123.123.123.123' }

@@ -13,6 +13,10 @@ class Step
     self.write!("OK \n".green)
   end
 
+  def self.warn
+    self.write!("WARN \n".brown)
+  end
+
   def self.fail(msg)
     self.write!("FAIL \n".red)
     $Log.error(msg)

@@ -9,12 +9,12 @@ module SshBuilder
           $fs.read @location
         end
 
-        def write(data)
-          $fs.write @location, @template.render
+        def write(data = {})
+          $fs.write @location, @template.render(data)
         end
 
         def ensure
-          $fs.generate_if_not_exists(@location, @template.render)
+          $fs.generate_if_not_exists!(@location, @template.render)
         end
 
         def exists?
@@ -29,7 +29,7 @@ module SshBuilder
           }.inspect
         end
 
-        def generate(data = {})
+        def render(data = {})
           @template.render(data)
         end
       end
