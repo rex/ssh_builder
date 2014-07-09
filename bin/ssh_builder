@@ -1,9 +1,4 @@
 #!/usr/bin/env ruby
 
-require 'ssh_builder/autoload'
-
-$Log = SshBuilder::Log.new(STDOUT)
-$Log.debug("ARGV: #{ARGV}")
-
-app = SshBuilder::App.new
-app.init
+require 'ssh_builder/utils/autoload'
+SshBuilder::App.boot

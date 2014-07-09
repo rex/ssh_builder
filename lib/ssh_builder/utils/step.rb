@@ -1,6 +1,6 @@
 class Step
   def self.write!(text)
-    if $Log.info?
+    if $Log.verbose?
       print text
     end
   end

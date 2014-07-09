@@ -23,7 +23,7 @@ Jeweler::Tasks.new do |gem|
   gem.authors = ["Pierce Moore"]
   gem.executables = ['ssh_builder']
   gem.require_paths = ["lib"]
-  gem.files = Dir.glob("lib/**/*.rb")
+  gem.files = Dir.glob("lib/**/*.{rb,mustache}")
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
